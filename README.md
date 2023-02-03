@@ -12,7 +12,7 @@
 <br>
 
 <p align="center">
-  <img alt="Portfolio Preview" src="/home/bruno/Documentos/MyPersonalPortfolio/.github/previewPortfolio.png">
+  <img alt="Portfolio Preview" src=".github/previewPortfolio.png">
 </p>
 
 <br>
