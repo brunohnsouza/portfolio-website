@@ -15,8 +15,6 @@
   <img alt="Portfolio Preview" src=".github/previewPortfolio.png">
 </p>
 
-<br>
-
 <h2 id="objetivo">🔎 <b>Objetivo:</b></h2>
 
 <p>
