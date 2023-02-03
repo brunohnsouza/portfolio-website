@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;700&display=swap');
+@import url("../reset.css");
+@import url("../global.css");
+
+/*
+  ==========
+    FOOTER
+  ==========
+*/
+
+footer {
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 500;
+  background-color: var(--quinary-color);
+  transition: .3s ease-in-out;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  
+  padding: 1.4rem 0;
+  
+  font-size: 1.4rem;
+}
+  
+.social-links > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+
+  transition: .3s ease-in-out;
+}
+.social-links > a:is(:hover, :focus) {
+  background-color: rgba(255, 255, 255, .15);
+  outline: none;
+}
+.social-links > a:is(:hover) > i {
+  color: var(--skin-color-hover);
+}
+
+.social-links > a > i {
+  font-size: 1.4rem;
+  color: var(--skin-color);
+
+  transition: .3s ease-in-out;
+}
+   
+.copyright {
+  background-color: var(--quaternery-color);
+  color: var(--tertiary-color);
+
+  transition: .3s ease-in-out;
+}
+
+  

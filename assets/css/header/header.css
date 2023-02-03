@@ -1,0 +1,214 @@
+@import url("../reset.css");
+@import url("../global.css");
+
+/* 
+  ======================
+    ANIMATION (SCROLL)
+  ======================
+*/
+
+/* ==================== LOGO | NAVLINKS ==================== */
+
+#mainNav.navbar-shrink #logo,
+#mainNav.navbar-shrink .nav-link {
+    color: var(--tertiary-color);
+
+    transition: .3s ease-in-out;
+}
+
+#mainNav.navbar-shrink #logo > span {
+    color: var(--quaternery-color);
+}
+
+#mainNav.navbar-shrink .nav-link:is(:visited) {
+    color: var(--tertiary-color);
+}
+#mainNav.navbar-shrink .nav-link:is(:hover, :active) {
+    color: var(--quaternery-color);
+}
+
+#mainNav.navbar-shrink .nav-link.active {
+    color: var(--quaternery-color) !important;
+}
+
+/* ==================== NAVBAR ==================== */
+
+#mainNav.navbar-shrink {
+    box-shadow: var(--primary-shadow);
+
+    background-color: var(--skin-color);
+
+    transition: .3s ease-in-out;
+}
+
+/* ==================== MENU HAMBURGUER ==================== */
+
+#mainNav.navbar-shrink .navbar-toggler {
+    color: var(--tertiary-color);
+}
+
+/* 
+  ==========
+    HEADER
+  ==========
+*/
+
+ /* ==================== LOGO ==================== */
+
+#logo {
+    font-size: 2.5rem;
+    font-family: 'Exo-2', sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding: .2rem 0;
+
+    transition: .3s ease-in-out;
+}
+#logo:is(:hover) {
+    opacity: .8;
+}
+
+#logo > span {
+    color: var(--skin-color);
+
+    transition: .3s ease-in-out;
+}
+
+/* ==================== NAVBAR ==================== */
+
+.navbar {
+    background-color: var(--bg-body-color);
+
+    transition: .3s ease-in-out;
+}   
+
+/* ==================== MENU HAMBURGUER ==================== */
+
+.navbar-toggler {
+    color: var(--primary-color);
+
+    transition: .3s ease-in-out;
+}
+.navbar-toggler:is(:focus) {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: var(--secundary-shadow);
+}
+
+.navbar-toggler > i {
+    font-size: 1.2rem;
+}
+
+/* ==================== NAV LINKS (STYLE) ==================== */
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Exo-2', sans-serif;
+    font-weight: 300;
+    color: var(--primary-color);
+
+    transition: .3s ease-in-out;
+}
+.nav-link:is(:visited) {
+    color: var(--primary-color);
+}
+.nav-link:is(:hover) {
+    color: var(--skin-color-hover);
+}
+.nav-link:is(:active) {
+    color: var(--skin-color);
+}
+
+/* ==================== ACTIVE LINKS (SCROLLPSY) ==================== */
+
+.nav-link.active {
+    color: var(--skin-color) !important;
+}
+
+/* ==================== DROPDOWN LINKS ==================== */
+
+.dropdown-item {
+    font-family: 'Exo-2', sans-serif;
+    font-weight: 300;
+    color: var(--quaternery-color);
+
+    transition: .3s ease-in-out;
+}
+.dropdown-item:is(:hover, :active, :focus) {
+    background-color: rgba(0, 0, 0, .10);
+}
+
+/* ==================== LANGUAGES (STYLE) ==================== */
+
+.language-selected {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .language-selected {
+        display: block;
+        margin: auto;
+    }
+}
+
+.language-selected::before {
+    content: "";
+    display: inline-block;
+    min-width: 2rem;
+    min-height: 2rem;
+    vertical-align: middle;
+    background: var(--brazil-flag-url) no-repeat center/contain;
+    margin-right: .2rem;
+}
+
+.language {
+    font-family: 'Exo-2', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0 !important;
+
+    transition: .3s ease-in-out;
+}
+.language:is(:visited) {
+    color: var(--primary-color);
+}
+.language:is(:hover) {
+    color: var(--skin-color-hover);
+}
+.language:is(:active){
+    color: var(--skin-color);
+}
+
+#boxLanguages > ul {
+    position: absolute;
+}
+
+#boxLanguages > li > a::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-right: .5rem;
+  }
+
+#boxLanguages > li > a.br::before {
+    background: var(--brazil-flag-url) no-repeat center/contain;
+}
+
+#boxLanguages > li > a.en::before {
+    background: var(--eua-flag-url) no-repeat center/contain;
+}
+
+/* ==================== LANGUAGES (JAVASCRIPT) ==================== */
+
+.language-selected.change-br::before {
+    background-image: var(--brazil-flag-url);
+}
+.language-selected.change-en::before {
+    background-image: var(--eua-flag-url);
+}

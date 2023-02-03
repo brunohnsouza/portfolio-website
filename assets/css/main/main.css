@@ -1,0 +1,811 @@
+@import url("../reset.css");
+@import url("../global.css");
+
+/* 
+  =============
+    ANIMATION
+  =============
+*/
+
+/* ==================== HOME-SCROLL-ARROW ==================== */
+
+.animation {
+  animation: up-down 2s ease-in-out infinite alternate-reverse;
+ }
+
+ @keyframes up-down {
+   from {
+    transform: translateY(.2rem);
+   }
+ 
+   to {
+    transform: translateY(-.2rem);
+   }
+ }
+
+/* ==================== CURSOR ANIMATION ==================== */
+
+ .typed-cursor {
+  color: var(--skin-color);
+
+  transition: .3s ease-in-out;
+}
+
+ /* 
+  =================
+    SCROLL TO TOP
+  =================
+*/
+ 
+/* ==================== SCROLL TO TOP (STYLE) ==================== */
+
+.scroll-to-top {
+  position: fixed;
+  right: 0.938rem;
+  bottom: 0.938rem;
+  width: 3rem;
+  height: 3rem;
+
+  text-align: center;
+  line-height: 3rem;
+
+  color: var(--tertiary-color);
+  background-color: var(--skin-color);
+
+  transition: .3s ease-in-out;
+}
+.scroll-to-top:is(:hover) {
+  color: var(--tertiary-color);
+  background-color: var(--skin-color-hover);
+}
+
+.scroll-to-top > i {
+  font-size: 1.2rem;
+  
+  transition: .3s ease-in-out;
+}
+
+/* ==================== SCROLL TO TOP (JAVASCRIPT) ==================== */
+
+.scroll-to-top-disable {
+  display: none;
+}
+
+ /* 
+  ==========================
+    SECTIONS CONFIGURATION
+  ==========================
+*/
+
+/* ==================== SECTIONS ==================== */
+
+#home,
+#about,
+#skills,
+#projects,
+#talkToMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#home {
+  margin-top: 5.5rem;
+}
+
+#about,
+#skills,
+#projects {
+  padding-top: 8rem;
+}
+
+#talkToMe {
+  padding: 8rem 0;
+}
+
+/* ==================== SECTIONS TITLE ==================== */
+
+.myTitleAbout,
+.myTitleSkills,
+.myTitleProjects,
+.myTitleTalkToMe {
+  position: relative;
+  font-size: 2.5rem;
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+
+  transition: .3s ease-in-out;
+}
+
+/* ==================== SECTIONS LINE ==================== */
+
+.myTitleAbout::before,
+.myTitleSkills::before,
+.myTitleProjects::before,
+.myTitleTalkToMe::before {
+  content: "";
+  position: absolute;
+  bottom: -.4rem;
+  left: 50%;
+  width: 5rem;
+  height: 0.188rem;
+  background-color: var(--skin-color);
+  transform: translateX(-50%);
+
+  transition: .3s ease-in-out;
+}
+
+ /* 
+  ========
+    HOME
+  ========
+*/
+
+/* ==================== TRANSITION ==================== */
+
+ .myTitle,
+ .mySubtitle,
+ .myParagraph,
+ .myName,
+ .myName.no-JS {
+  transition: .3s ease-in-out;
+}
+
+/* ==================== TITLE | SUBTITLE | MY NAME | MY PARAGRAPH ==================== */ 
+
+ .myTitle,
+ .mySubtitle {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.myTitle > .myName {
+  font-weight: 700;
+  color: var(--skin-color);
+}
+.myTitle > .myNameNoJS {
+  font-weight: 700;
+  color: var(--skin-color);
+}
+
+.mySubtitle {
+  font-size: 1.4rem;
+  padding: .2rem;
+}
+
+.myParagraph {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--secundary-color);
+  padding: .2rem;
+}
+
+/* ==================== MY PHOTO 1 ==================== */
+
+.bg-my-photo {
+  display: block;
+  margin-left: auto;
+  width: 25rem;
+  fill: var(--skin-color);
+
+  transition: .3s ease-in-out;
+}
+.bg-my-photo:is(:hover) {
+  fill: var(--skin-color-hover);
+}
+
+.my-photo-1 {
+  width: 15rem;
+}
+
+@media (max-width: 1199px) {
+  .bg-my-photo {
+    margin: auto;
+  }
+}
+
+/* ==================== GITHUB AND LINKEDIN ICON ==================== */
+
+.social-icons > a {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  margin-right: 1.375rem;
+  text-align: center;
+  line-height: 2.3rem;
+  border: .075rem solid var(--tertiary-color);
+  outline: .125rem solid var(--skin-color);
+  
+  transition: .3s ease-in-out;
+}
+.social-icons > a:not(:first-child) {
+  margin-right: 0;
+}
+.social-icons > a:is(:hover) {
+  transform: translateY(-0.313rem);
+  background-color: var(--skin-color-hover);
+  outline: .125rem solid var(--skin-color-hover);
+}
+
+.social-icons > a > i {
+  color: var(--tertiary-color);
+  font-size: 1.2rem;
+}
+
+/* ==================== SCROLL MESSAGE ==================== */
+
+ .home__scroll-mouse,
+ .home__scroll-name {
+  vertical-align: middle;
+ }
+
+ .home__scroll-button {
+  color: var(--skin-color);
+  fill: var(--skin-color);
+  text-decoration: none;
+  padding: .6rem 0;
+
+  transition: .3s ease-in-out;
+ }
+ .home__scroll-button:is(:hover) {
+  color: var(--skin-color-hover);
+  fill: var(--skin-color-hover);
+ }
+
+ .home__scroll-mouse {
+  font-size: 2rem;
+ }
+
+ .home__scroll-name {
+  font-size: 1.2rem;
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 300;
+ }
+
+ .home__scroll-arrow {
+  width: 1.2rem;
+  height: 1.2rem;
+ }
+
+ /* 
+  =========
+    ABOUT
+  =========
+*/
+
+/* ==================== TITLE ==================== */
+
+#personalPresentation {
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-size: 2rem;
+
+  transition: .3s ease-in-out;
+}
+
+/* ==================== MY INFORMATION ==================== */
+
+.list-group > div {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--secundary-color);
+
+  transition: .3s ease-in-out;
+}
+
+.list-group > div > strong {
+  font-weight: 500;
+
+  transition: .3s ease-in-out;
+}
+
+/* ==================== BUTTONS ==================== */
+
+.btn-with-bg {
+  background-color: var(--skin-color);
+  color: var(--tertiary-color);
+  white-space: nowrap;
+
+  transition: .3s ease-in-out;
+}
+.btn-with-bg:is(:visited) {
+  background-color: var(--skin-color);
+}
+.btn-with-bg:is(:hover) {
+  background-color: var(--skin-color-hover);
+  color: var(--tertiary-color);
+  box-shadow: none;
+}
+.btn-with-bg:is(:focus) {
+  box-shadow: none;
+}
+
+.btn-without-bg {
+  background-color: transparent;
+  color: var(--skin-color);
+  border: 0.125rem solid var(--skin-color);
+  white-space: nowrap;
+
+  transition: .3s ease-in-out;
+}
+.btn-without-bg:is(:visited) {
+  background-color: var(--skin-color);
+}
+.btn-without-bg:is(:hover) {
+  background-color: var(--skin-color);
+  color: var(--tertiary-color);
+  border: 0.125rem solid var(--skin-color);
+  box-shadow: none;
+}
+.btn-without-bg:is(:focus) {
+  box-shadow: none;
+}
+
+/* ==================== MY PHOTO 2 ==================== */
+
+.background-photo-2 {
+  max-width: 25rem;
+  margin: 0 auto;
+  background-color: var(--skin-color);
+  border-radius: .9rem;
+
+  box-shadow: var(--secundary-shadow);
+  transition: .3s ease-in-out;
+}
+.background-photo-2:is(:hover) {
+  background-color: var(--skin-color-hover);
+}
+
+.my-photo-2 {
+  border-radius: .9rem;
+}
+
+ /* 
+  ==========
+    SKILLS
+  ==========
+*/
+
+/* ==================== TITLE 'HARDSKILLS' AND 'SOFTSKILLS' ==================== */
+
+.hardSkills,
+.softSkills {
+  font-size: 2rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* ==================== ACCORDION ==================== */
+
+.accordion-item,
+.accordion-button {
+  border: none;
+  background-color: var(--senary-color);
+  box-shadow: var(--tertiary-shadow);
+
+  transition: .3s ease-in-out;
+}
+
+.accordion-item:first-of-type,
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:not(:first-of-type),
+.accordion-item:last-of-type, 
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type .accordion-collapse {
+  border-radius: .9rem;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: var(--angle-icon-url);
+  background-size: 1.5rem;
+
+  transition: .3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  background: none;
+  color: none;
+}
+
+.accordion-button:is(:focus) {
+  box-shadow: none;
+  background-color: none;
+}
+.accordion-button:is(:hover) {
+  background-color: rgba(0, 0, 0, .05);
+}
+
+/* ==================== SKILL ICONS (SVG) ==================== */
+
+.skill__icon {
+  font-size: 2rem;
+  color: var(--skin-color);
+  transition: .3s ease-in-out;
+}
+.skill__svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ==================== SKILL TITLE AND TITLE BODY ==================== */
+
+.skill__title,
+.skill__titleBody {
+  font-size: 1.4rem;
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 300;
+  color: var(--septenary-color);
+
+  transition: .3s ease-in-out;
+}
+
+.skill__titleBody {
+  font-weight: 600;
+}
+
+.skill__description {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--secundary-color);
+  
+
+  transition: .3s ease-in-out;
+}
+
+.information > span, abbr {
+  color: var(--secundary-color);
+
+  transition: .3s ease-in-out;
+}
+
+.check-skill-icon {
+  font-size: 2rem;
+  color: var(--skin-color);
+
+  transition: .3s ease-in-out;
+}
+
+ /* 
+  ============
+    PROJECTS
+  ============
+*/
+
+/* ==================== FILTER SEARCH ==================== */
+
+ .sr-only {
+  position: absolute;
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  margin: -0.625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  white-space: nowrap;
+} 
+
+.input-wrapper {
+  position: relative;
+  margin: auto;
+  padding-top: 3rem;
+  max-width: 40rem;
+}
+
+.input-wrapper > input {
+  padding: 0.8rem 1rem;
+  border-radius: .9rem;
+
+  background-color: var(--senary-color);
+
+  box-shadow: var(--tertiary-shadow);
+  border: 0;
+  outline: 0;
+
+  width: 100%;
+  color: var(--secundary-color);
+  caret-color: var(--secundary-color);
+
+  font-size: 1.2rem;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+
+  transition: .3s ease-in-out;
+}
+.input-wrapper > input::placeholder {
+  color: var(--secundary-color);
+
+  transition: .3s ease-in-out;
+}
+
+.input-wrapper > i {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  color: var(--secundary-color);
+  font-size: 1.2rem;
+
+  transition: .3s ease-in-out;
+}
+
+/* ==================== ITEMS FILTER (STYLE) ==================== */
+
+ .projects__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+ }
+
+ .projects__item {
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: .25rem .75rem;
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: .5rem;
+  white-space: nowrap;
+
+  transition: .3s ease-in-out;
+ }
+ .projects__item:is(:hover, :focus) {
+  background-color: var(--skin-color);
+  color: var(--tertiary-color);
+  outline: none;
+ }
+
+ /* ==================== ITEMS FILTER (JAVASCRIPT) ==================== */
+
+  .active-projects {
+    background-color: var(--skin-color);
+    color: var(--tertiary-color);
+  }
+  .active-projects:is(:hover) {
+    background-color: var(--skin-color-hover);
+  }
+
+ /* ==================== PROJECT CARDS ==================== */
+
+ .projects__card {
+  display: block;
+  margin: auto;
+  max-width: 31.25rem;
+  background-color: var(--senary-color);
+  box-shadow: var(--tertiary-shadow);
+  padding: 1rem;
+  border-radius: 1rem;
+
+  transition: .3s ease-in-out;
+ }
+ .projects__container:has(.projects__card:hover) .projects__card:not(:hover) {
+  opacity: .6;
+  scale: .98;
+}
+
+ .projects__img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+ }
+
+.projects__main-title {
+  color: var(--septenary-color);
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 700;
+  margin: 0;
+
+  transition: .3s ease-in-out;
+}
+
+.projects__main-tech {
+  display: flex;
+  gap: .5rem;
+  padding: .3rem 0 .6rem 0;
+}
+
+.icon-tech {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  transition: .4s ease-in-out;
+}
+.icon-tech:is(:hover) {
+  transform: scale(1.2);
+}
+
+.projects__icon {
+  font-size: 1.2rem;
+  transition: .3s ease-in-out;
+ }
+
+ .projects__button {
+  width: max-content;
+  text-decoration: none;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--secundary-color);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+
+  transition: .3s ease-in-out;
+}
+.projects__button:is(:hover) {
+ color: var(--skin-color-hover);
+ 
+ transition: .3s ease-in-out;
+}
+
+.projects__icon {
+  color: var(--secundary-color);
+
+  transition: .3s ease-in-out;
+}
+
+.projects__button:is(:hover) .projects__icon {
+  transform: translateX(.25rem);
+  color: var(--skin-color-hover);
+ }
+
+  /* 
+  ==============
+    TALK TO ME
+  ==============
+*/
+
+.contact__content {
+  margin: auto;
+  max-width: 30rem;
+}
+
+ /* ==================== DIV (INPUTS | TEXTAREA) ==================== */
+
+ .contact__form-div {
+  position: relative;
+  margin-bottom: 3.5rem;
+  height: 3.5rem;
+ }
+
+/* ==================== LABEL ==================== */
+ .contact__form-tag {
+  position: absolute;
+  top: -1rem;
+  left: 1.25rem;
+  padding: 0 .25rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Exo-2', sans-serif;
+  font-weight: 300;
+  background-color: var(--bg-body-color);
+  z-index: 10;
+
+  transition: .3s ease-in-out;
+ }
+
+ /* ==================== INPUTS | TEXTAREA ==================== */
+ .contact__form-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+  color: var(--primary-color);
+
+  outline: 0.125rem solid var(--secundary-color);
+  border: none;
+  caret-color: var(--primary-color);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: .9rem;
+  z-index: 1;
+
+  transition: .3s ease-in-out;
+ }
+ .contact__form-input::placeholder {
+  color: var(--secundary-color);
+
+  transition: .3s ease-in-out;
+}
+.contact__form-input:is(:focus) {
+  outline: 0.125rem solid var(--skin-color);
+}
+
+
+@media (max-width: 575px) {
+  .contact__form-div {
+    margin-bottom: 4.4rem;
+  }  
+}
+
+.contact__form-area {
+  height: 10rem;
+  margin: 0 0 3rem 0;
+ }
+
+ .contact__form-area > textarea {
+  resize: none;
+  padding: 1rem 1.5rem;
+  caret-color: var(--primary-color);
+
+  transition: .3s ease-in-out;
+ }
+
+ .contact__form-input:is(:-webkit-autofill) {
+  -webkit-box-shadow: 0 0 0 1.875rem var(--tertiary-color) inset;
+  -webkit-text-fill-color: var(--quinary-color);
+  caret-color: var(--quinary-color);
+  border-color: var(--tertiary-color);
+ }
+:has(.contact__form-input:is(:-webkit-autofill)) .contact__form-tag {
+  background-color: transparent;
+  top: -2rem;
+ }
+
+ /* ==================== SMALL ERRORS (JAVASCRIPT) ==================== */
+.contact__form-info,
+.contact__form-info.textarea {
+  display: none;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--error-color);
+  position: absolute;
+  top: 3.6rem;
+  left: 1.5rem;
+}
+.contact__form-info.textarea {
+  top: 10.1rem;
+}
+
+/* ==================== BUTTONS ==================== */
+ .contact__form > button{
+  transition: .3s ease-in-out;
+ }
+
+/* ==================== DIALOG (THANKS FOR CANTACT ME) ==================== */
+ dialog::backdrop {
+  background-color: rgba(0, 0, 0, .5);
+ }
+
+ dialog {
+  margin: auto;
+  border: none;
+  border-radius: .9rem;
+  box-shadow: var(--tertiary-shadow);
+ }
+
+ dialog > .container > h3 {
+  font-family: 'Jura', sans-serif;
+  font-weight: 700;
+  color: var(--quaternery-color);
+ }
+ dialog > .container > p {
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--quinary-color);
+ }

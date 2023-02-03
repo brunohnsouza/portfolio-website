@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="page-top">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="author" content="Bruno Souza" />
+    <meta name="description" content="@brunohnsouza. Portfólio Web do Desenvolvedor Front-end Bruno Souza."/>
+    <meta name="keywords" content="Front-end, Web, Programação, Desenvolvimento, Tecnologia">
+    <meta name="robots" content="index,nofollow">
+    <meta name="msapplication-TileImage" content="./assets/img/favicon/ms-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/manifest.json">
+    <title>Bruno Souza: Desenvolvedor Front-end | Programador Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="./assets/bootstrap-5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/components/__loader.min.css">
+    <link rel="stylesheet" href="./assets/css/header/header.min.css">
+    <link rel="stylesheet" href="./assets/css/main/main.min.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.min.css">
+    <link rel="preload" href="./assets/css/colors/style-switcher.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/colors/style-switcher.min.css"></noscript>
+    <link rel="stylesheet" href="./assets/css/colors/color-1.css">
+    <link rel="stylesheet" href="./assets/css/colors/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./assets/css/colors/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./assets/css/colors/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./assets/css/colors/color-5.css" class="alternate-style" title="color-5" disabled>
+    <!-- Unicons -->
+    <link rel="preload" href="./assets/node_modules/@iconscout/unicons/css/line.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/node_modules/@iconscout/unicons/css/line.css"></noscript>
+    <!-- Facybox -->
+    <link rel="preload" href="./assets/node_modules/@fancyapps/ui/dist/fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/node_modules/@fancyapps/ui/dist/fancybox.css"></noscript>
+</head>
+<body>
+
+    <!-- ========== LOADING ==========  -->
+    <div class="p-loading">
+        <span class="loader"></span>
+    </div>
+
+    <header>
+        <!-- ========== NAVIGATION ==========  -->
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <!-- ========== LOGO | MENU HAMBURGUER ==========  -->
+                <a id="logo" class="navbar-brand" href="./index.html" translate="no">Bru<span>no</span>.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" tabindex="0">
+                    <i class="uil uil-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <!-- ========== LINKS ==========  -->
+                    <ul class="navbar-nav justify-content-xl-center align-items-xl-center text-colapsed ms-auto py-lg-0">
+                        <li class="nav-item">
+                            <a id="linkHome" class="nav-link pe-4" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkAbout" class="nav-link pe-4 " href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkSkills" class="nav-link pe-4 " href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkProjects" class="nav-link pe-4" href="#projects">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="linkTalkToMe" class="nav-link pe-4" href="#talkToMe">Fale Comigo</a>
+                        </li>
+                        <!-- ========== SELECT LANGUAGES ==========  -->
+                        <li class="nav-item mt-2 dropdown language-selected change-br">
+                            <a class="nav-link language" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="idiom">Português</span> <i class="uil uil-angle-down"></i>
+                            </a>
+                            <ul id="boxLanguages" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownLanguages">
+                                <li><a class="dropdown-item br" language="portuguese" href="#">Português</a></li>
+                                <li><a class="dropdown-item en" language="english" href="#">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========== HOME ==========  -->
+        <section id="home">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <!-- ========== LEFT COLUMN ==========  -->
+                    <div class="leftColumn col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 mb-2 myTitle" tabindex="0"><span id="titleHome">Oi, eu sou o </span> <noscript class="myNameNoJS">Bruno Souza</noscript> <span class="myName"></span></h1>
+                            <h2 id="subtitleHome" class="display-6 mb-3 mySubtitle" tabindex="0">Desenvolvedor Front-End</h2>
+                            <p id="paragraphHome" class="lead mb-4 myParagraph" tabindex="0">Apaixonado por aprender, criar e desbravar desafios na construção de sistemas e interfaces no mundo da Web!</p>
+                            <div class="social-icons mb-5">
+                                <a href="https://www.linkedin.com/in/brunohnsouza" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                                <a href="https://github.com/brunohnsouza" target="_blank"><i class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="home__scroll my-5">
+                                <a href="#about" class="home__scroll-button">
+                                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                    <span id="scrollMenssageHome" class="home__scroll-name">Role para baixo</span>
+                                    <svg class="home__scroll-arrow animation" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24">
+                                        <path d="M17.71,11.29a1,1,0,0,0-1.42,0L13,14.59V7a1,1,0,0,0-2,0v7.59l-3.29-3.3a1,1,0,0,0-1.42,1.42l5,5a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l5-5A1,1,0,0,0,17.71,11.29Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== RIGHT COLUMN ==========  -->
+                    <div class="rightColumn col-xl-5 col-xxl-6 d-xl-block text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <svg class="img-fluid bg-my-photo animation" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="my-photo-1" x="-10" y="-90" href="./assets/img/my-photo-1.webp" alt="Foto de Bruno Souza com os braços cruzados e sorridente, vestindo camisa branca e jaqueta jeans azul."/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT ==========  -->
+        <section id="about"> 
+            <div class="container">
+                <div class="text-center pb-5">
+                    <h2 id="titleAbout" class="myTitleAbout" tabindex="0">Sobre Mim</h2>
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <!-- ========== RIGHT COLUMN ==========  -->
+                    <div class="col-lg-8 col-xl-7 col-xxl-6 order-lg-1">
+                        <div class="my-4 text-center text-xl-start">
+                            <h3 id="personalPresentation" class="mb-4" tabindex="0">Olá, eu sou o Bruno</h3>
+                            <p id="aboutMeParagraph" class="lead mb-4 myParagraph" tabindex="0">
+                                Desde que me interessei pelo Desenvolvimento Web, estudo diariamente para ser um programador melhor, um estudante melhor,
+                                uma pesssoa melhor. Há tempos venho desenvolvendo diversos projetos, além de buscar minha própria evolução como pessoa e com as pessoas. 
+                                Hoje, curso Análise e Desenvolvimento de Sistemas na UNINASSAU e continuo nessa jornada, pois me considero um eterno aprendiz!
+                            </p>
+                            <div class="myInformationList mb-4">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group">
+                                        <div class="mb-2 p-1" tabindex="0">
+                                            <strong id="listNameStrong" class="skin-color">Nome:</strong> Bruno Souza
+                                        </div> 
+                                    </li>
+                                    <li class="list-group">
+                                        <div class="mb-2 p-1" tabindex="0">
+                                            <strong id="listAcademicEducationStrong" class="skin-color">Formação:</strong> 
+                                            <span id="listMyAcademicEducation">Técnico em Redes de Computadores</span>
+                                        </div> 
+                                    </li>
+                                    <li class="list-group">
+                                        <div class="mb-2 p-1" tabindex="0">
+                                            <strong id="listStateStrong" class="skin-color">Estado:</strong> Pernambuco
+                                        </div> 
+                                    </li>
+                                    <li class="list-group" tabindex="0">
+                                        <div class="mb-2 p-1">
+                                            <strong id="listMyBirthStrong" class="skin-color">Nascimento:</strong> 
+                                            <span id="listMyBirth">13 Outubro, 2003</span>
+                                        </div> 
+                                    </li>
+                                    <li class="list-group" tabindex="0">
+                                        <div class="mb-2 p-1">
+                                            <strong id="listCountryStrong" class="skin-color">País:</strong> <span id="listCountry">Brasil</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a id="btnDownloadCV" class="btn btn-lg px-4 btn-with-bg me-sm-3" href="./assets/download/BrunoSouza_CV_ptBr.pdf" download="BrunoSouza_CV">Download CV <i class="uil uil-download-alt"></i></a>
+                                <a id="btnSendMessage" class="btn btn-without-bg btn-lg px-4" href="#talkToMe">Envie uma mensagem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== LEFT COLUMN ==========  -->
+                    <div class="col-xl-5 col-xxl-6 d-xl-block text-center">
+                        <div class="background-photo-2 mt-4" tabindex="0">
+                            <img class="img-fluid my-photo-2 mb-lg-0" src="./assets/img/my-photo-2.webp" alt="Autorretrato de Bruno Souza sorrindo, vestindo camisa branca e jaqueta jeans azul." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS ==========  -->
+        <section id="skills"> 
+            <div class="container">
+                <div class="text-center pb-4">
+                    <h2 class="myTitleSkills" tabindex="0">Skills</h2>
+                </div>  
+                <div class="hard row">
+                    <!-- ========== HARDSKILLS ==========  -->
+                    <div class="mt-5 text-xl-start">
+                        <h3 id="hard" class="display-6 hardSkills" tabindex="0">Hard</h3> 
+                    </div>
+                    <!-- ========== LEFT COLUMN ==========  -->
+                    <div class="col-lg-6">
+                        <!-- SKILL 1 -->
+                        <div class="accordion my-5" id="hardskillOne">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardOne" aria-expanded="false" aria-controls="hardOne">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            <abbr class="text-decoration-none" title="HyperText Markup Language">HTML</abbr>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardOne" aria-labelledby="hardOne" data-bs-parent="#hardskillOne">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            <abbr class="text-decoration-none" title="HyperText Markup Language">HTML</abbr>
+                                        </h4>
+                                        <p id="htmlDescription" class="skill__description text-center" tabindex="0">
+                                            Linguagem de Marcação de Hipertexto utilizada na estruturação de páginas na Web.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillSemantic">Semântica em</span>
+                                                    <abbr class="text-decoration-none" title="HyperText Markup Language">HTML</abbr> 
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <abbr class="text-decoration-none" title="Search Engine Optimization">SEO</abbr>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillHtmlAccessibility">Acessibilidade</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 2 -->
+                        <div class="accordion my-5" id="hardskillTwo">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardTwo" aria-expanded="false" aria-controls="hardTwo">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            <abbr class="text-decoration-none" title="Cascading Style Sheets">CSS</abbr>
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardTwo" aria-labelledby="hardTwo" data-bs-parent="#hardskillTwo">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4"tabindex="0">
+                                            <abbr class="text-decoration-none" title="Cascading Style Sheets">CSS</abbr>
+                                        </h4>
+                                        <p id="cssDescription" class="skill__description text-center"tabindex="0">
+                                            Linguagem de Folha de Estilo em Cascatas utilizada na estilização de páginas escritas em uma linguagem de marcação.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i>  
+                                                    <span id="skillResponsiveness">Responsividade</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <abbr class="text-decoration-none" title="Cascading Style Sheets">CSS</abbr>
+                                                    <span>Flexbox</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillCssAccessibility">Acessibilidade</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 3 -->
+                        <div class="accordion my-5" id="hardskillThree">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardThree" aria-expanded="false" aria-controls="hardThree">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            JavaScript
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardThree" aria-labelledby="hardThree" data-bs-parent="#hardskillThree">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            JavaScript
+                                        </h4>
+                                        <p id="jsDescription" class="skill__description text-center" tabindex="0">
+                                            Linguagem de programação utilizada para dar interatividade nas páginas na Web, melhorando
+                                            a experiência dos usuários durante a navegação.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i>  
+                                                    <span id="skillDom">Manipulação da DOM (Document Object Model)</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 4 -->
+                        <div class="accordion mt-5" id="hardskillFour">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardFour" aria-expanded="false" aria-controls="hardFour">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/bootstrap-5-1.svg" alt="Logo Bootstrap" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            Bootstrap
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardFour" aria-labelledby="hardFour" data-bs-parent="#hardskillFour">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Bootstrap
+                                        </h4>
+                                        <p id="bootstrapDescription" class="skill__description text-center" tabindex="0">
+                                            Framework web utilizado na construção de interfaces utilizando componentes, 
+                                            com o princípio da responsividade em primeiro plano.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== RIGHT COLUMN ==========  -->
+                    <div class="col-lg-6">
+                        <!-- SKILL 5 -->
+                        <div class="accordion my-5" id="hardskillFive">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardFive" aria-expanded="false" aria-controls="hardFive">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/visual-studio-code-1.svg" alt="Logo Visual Studio Code" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            Visual Studio Code
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardFive" aria-labelledby="hardFive" data-bs-parent="#hardskillFive">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Visual Studio Code
+                                        </h4>
+                                        <p id="vsCodeDescription" class="skill__description text-center" tabindex="0">
+                                            Editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e MacOS, com suporte para
+                                            várias tecnologias atuais.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 6 -->
+                        <div class="accordion my-5" id="hardskillSix">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillSix">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardSix" aria-expanded="false" aria-controls="hardSix">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            Git
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardSix" aria-labelledby="hardSix" data-bs-parent="#hardskillSix">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Git
+                                        </h4>
+                                        <p id="gitDescription" class="skill__description text-center" tabindex="0">
+                                            Sistema de controle de versões distribuído usado para criar registros
+                                            históricos de edições de qualquer tipo de arquivo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 7 -->
+                        <div class="accordion my-5" id="hardskillSeven">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillSeven">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardSeven" aria-expanded="false" aria-controls="hardSeven">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            GitHub
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardSeven" aria-labelledby="hardSeven" data-bs-parent="#hardskillSeven">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            GitHub
+                                        </h4>
+                                        <p id="githubDescription" class="skill__description text-center" tabindex="0">
+                                            Plataforma de hospedagem de código-fonte e arquivos controlados historicamente
+                                            pelo Git.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 8 -->
+                        <div class="accordion my-5" id="hardskillEight">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="hardskillEight">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hardEight" aria-expanded="false" aria-controls="hardEight">
+                                        <img class="skill__svg me-3" src="./assets/img/logoTechs/tux.svg" alt="Logo Linux Tux" tabindex="0">
+                                        <span class=" skill__title" tabindex="0">
+                                            Linux
+                                        </span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="hardEight" aria-labelledby="hardEight" data-bs-parent="#hardskillEight">
+                                    <div class="accordion-body">
+                                        <h4 class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Linux
+                                        </h4>
+                                        <p id="linuxDescription" class="skill__description text-center" tabindex="0">
+                                            Sistema Operacional com código aberto, ou seja, com possibilidade para
+                                            modificações e distribuições de forma livre. 
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i>  
+                                                    <span>Terminal</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="soft row">
+                    <!-- ========== SOFTSKILLS ==========  -->
+                    <div class="mt-5 text-xl-start">
+                        <h3 id="soft" class="display-6 softSkills" tabindex="0">Soft</h3> 
+                    </div>
+                    <!-- ========== LEFT COLUMN ==========  -->
+                    <div class="col-lg-6">
+                        <!-- SKILL 1 -->
+                        <div class="accordion my-5" id="softskillOne">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softOne" aria-expanded="false" aria-controls="softOne">
+                                        <i class="uil uil-book-open skill__icon me-3"></i>
+                                        <span id="skillTitleLifeLL" class=" skill__title" lang="en" tabindex="0">Lifelong Leaner</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softOne" aria-labelledby="softOne" data-bs-parent="#softskillOne">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyLifeLL" class="skill__titleBody text-center mt-4" lang="en" tabindex="0">
+                                            Lifelong Learner
+                                        </h4>
+                                        <p id="lifeLLDescription" class="skill__description text-center" tabindex="0">
+                                            Tendo como princípio o aprendizado ao longo da vida, essa skill proconiza a educação contínua.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillConstantStudy">Busco estudar constantemente.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillNewAbility">Desenvolvo novas habilidades.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillProblemsSolution">Busco novas formas de resolver um problema.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 2 -->
+                        <div class="accordion my-5" id="softskillTwo">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softTwo" aria-expanded="false" aria-controls="softTwo">
+                                        <i class="uil uil-comment-alt-lines skill__icon me-3"></i>
+                                        <span id="skillTitleCommunication" class=" skill__title">Comunicação</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softTwo" aria-labelledby="softTwo" data-bs-parent="#softskillTwo">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyCommunication" class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Comunicação
+                                        </h4>
+                                        <p id="communicationDescription" class="skill__description text-center" tabindex="0">
+                                            Permite quebrar barreiras departamentais e colaborar junto com o time na troca de 
+                                            ideias e recebimento de avaliações externas.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillListener">Sou um bom ouvinte.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillDoubtsQuestion">Exponho minhas dúvidas e perguntas.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillSimplifyExplanation">Esforço em simplificar explicações.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 3 -->
+                        <div class="accordion mt-5" id="softskillThree">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softThree" aria-expanded="false" aria-controls="softThree">
+                                        <i class="uil uil-heart skill__icon me-3"></i>
+                                        <span id="skillTitleEmpathy" class=" skill__title">Empatia</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softThree" aria-labelledby="softThree" data-bs-parent="#softskillThree">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyEmpathy" class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Empatia
+                                        </h4>
+                                        <p id="empathyDescription" class="skill__description text-center" tabindex="0">
+                                            Se colocar no lugar da outra pessoa, observando o mundo com outra
+                                            perspectiva e com o respeito acima de tudo.
+                                        </p>
+                                        <ul class="list-group list-group-flush" tabindex="0">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillUsageFlows">Imagino possíveis fluxos de uso de um produto.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillAsTheUser">Esforço em pensar como o usuário.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== RIGHT COLUMN ==========  -->
+                    <div class="col-lg-6">
+                        <!-- SKILL 4 -->
+                        <div class="accordion my-5" id="softskillFour">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillFour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softFour" aria-expanded="false" aria-controls="softFour">
+                                        <i class="uil uil-brain skill__icon me-3"></i>
+                                        <span id="skillTitleEmotionalIntelligence" class=" skill__title" tabindex="0">Inteligência Emocional</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softFour" aria-labelledby="softFour" data-bs-parent="#softskillFour">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyEmotionalIntelligence" class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Inteligência Emocional
+                                        </h4>
+                                        <p id="emotionalIDescription" class="skill__description text-center" tabindex="0">
+                                            Gerencia das emoções com objetivo da não interferência na entrega de resultados e
+                                            desenvolver equilíbrio na rotina.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillLimits">Autoconhecimento dos meus limites.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillPositiveNegativeEmotions">Diferencio emoções positivas de negativas.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 5 -->
+                        <div class="accordion my-5" id="softskillFive">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillFive">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softFive" aria-expanded="false" aria-controls="softFive">
+                                        <i class="uil uil-search-alt skill__icon me-3"></i>
+                                        <span id="skillTitleFocus" class=" skill__title" tabindex="0">Foco</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softFive" aria-labelledby="softFive" data-bs-parent="#softskillFive">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyFocus" class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Foco
+                                        </h4>
+                                        <p id="focusDescription" class="skill__description text-center" tabindex="0">
+                                            Dedicação e constância para realizar qualquer objetivo único.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillRigidFlexible">Rígido nas metas e ações, mas flexível nas expectativas.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SKILL 6 -->
+                        <div class="accordion my-5" id="softskillSix">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="softskillSix">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#softSix" aria-expanded="false" aria-controls="softSix">
+                                        <i class="uil uil-trees skill__icon me-3"></i>
+                                        <span id="skillTitleResilience" class=" skill__title" tabindex="0">Resiliência</span>
+                                    </button>
+                                </h3>
+                                <div class="accordion-collapse collapse" id="softSix" aria-labelledby="softSix" data-bs-parent="#softskillSix">
+                                    <div class="accordion-body">
+                                        <h4 id="skillTitleBodyResilience" class="skill__titleBody text-center mt-4" tabindex="0">
+                                            Resiliência
+                                        </h4>
+                                        <p id="resilienceDescription" class="skill__description text-center" tabindex="0">
+                                            Capacidade de gerenciamento de momentos difíceis, evitando a sua desistência e impulsionando você a seguir adiante.
+                                        </p>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillMeetGoal">Penso em cumprir o objetivo, apesar dos obstáculos.</span>
+                                                </div> 
+                                            </li>
+                                            <li class="list-group">
+                                                <div class="mb-2 information" tabindex="0">
+                                                    <i class="uil uil-check check-skill-icon align-middle"></i> 
+                                                    <span id="skillIncessantSearch">Procuro incessantemente por soluções de problemas.</span>
+                                                </div> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS ==========  -->
+        <section id="projects"> 
+            <div class="container">
+                <div class="text-center pb-4">
+                    <h2 id="titleProjects" class="myTitleProjects" tabindex="0">Projetos</h2>
+                </div>
+                <!-- ========== SEARCH ==========  -->
+                <div class="input-wrapper">
+                    <label for="filter" class="sr-only">Pesquisar projeto</label>
+                    <input id="filter" type="text" placeholder="Pesquisar projeto">
+                    <i class="uil uil-search-alt"></i>
+                </div>
+                <!-- ========== FILTERS ==========  -->
+                <div class="projects__filters my-5">
+                    <span id="itemAll" class="projects__item active-projects" data-filter="all" tabindex="0">Todos</span>
+                    <span id="itemCourses" class="projects__item" data-filter=".courses" tabindex="0">Cursos</span>
+                    <span id="itemLiveCodings" class="projects__item" data-filter=".live-codings" lang="en" tabindex="0">Live Codings</span>
+                    <span id="itemPersonal" class="projects__item" data-filter=".personal" tabindex="0">Pessoais</span>
+                    <span id="itemOthers" class="projects__item" data-filter=".others" tabindex="0">Outros</span>
+                </div>
+                <div class="row projects__container">
+                    <!-- ========== LEFT COLUMN ==========  -->
+                    <div class="leftColumn col-lg-6">
+                        <!-- DEVLINKS -->
+                        <div class="projects__card my-4 mix courses">
+                            <a data-fancybox href="./assets/img/projects/devlinks.png">
+                                <img id="projectDevlinks" class="projects__img" src="./assets/img/projects/devlinks.png" alt="Imagem do projeto DevLinks">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    DevLinks
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" title="HTML">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" title="CSS">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/devlinks-rocketseat" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://devlinksbruno.netlify.app/#" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NETFLIX CLONE V1 -->
+                        <div class="projects__card mt-4 mix courses">
+                            <a data-fancybox href="./assets/img/projects/netflixCloneV1.png">
+                                <img id="projectNetflixCloneV1" class="projects__img" src="./assets/img/projects/netflixCloneV1.png" alt="Imagem do projeto Netflix Clone versão 1">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    Netflix Clone 1.0
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0"> 
+                                    <img class="icon-tech" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" title="HTML">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" title="CSS">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/owl-logo.png" alt="Logo Owl Carousel" title="Owl Carousel">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/recriando_interface_da_netflix" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://netflixbrasilclone.netlify.app/" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                        <!-- PWA COVID -->
+                        <div class="projects__card mt-4 mix courses">
+                            <a data-fancybox href="./assets/img/projects/pwaCovid.png">
+                                <img id="projectPwaCovid19" class="projects__img" src="./assets/img/projects/pwaCovid.png" alt="Imagem do projeto Painel Covid-19">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    <abbr id="pwa" class="text-decoration-none" title="Progressive Web Application" lang="en">
+                                        PWA
+                                    </abbr>
+                                    <abbr id="covid-19" class="text-decoration-none" title="Coronavirus disease 2019" lang="en">
+                                        COVID-19
+                                    </abbr>
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/nodejs-icon.svg" alt="Logo NodeJs" title="NodeJs">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/react-2.svg" alt="Logo React" title="React">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/pwa_covid19" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://painelmundialcovid19.netlify.app/" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ========== RIGHT COLUMN ==========  -->
+                    <div class="rightColumn col-lg-6">
+                        <!-- HELP UP -->
+                        <div class="projects__card my-4 mix others">
+                            <a data-fancybox href="./assets/img/projects/helpUp.png">
+                                <img id="projectHelpUp" class="projects__img" src="./assets/img/projects/helpUp.png" alt="Imagem do projeto Help Up">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    Help Up
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" title="HTML">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" title="CSS">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/vlibras.png" alt="Logo VLibras" title="VLibras">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/bootstrap-5-1.svg" alt="Logo Bootstrap" title="Bootstrap">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/help-up" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://helpup.netlify.app/" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                        <!-- POKÉMON UNIVERSE -->
+                        <div class="projects__card my-4 mix live-codings">
+                            <a data-fancybox href="./assets/img/projects/pokemonUniverse.png">
+                                <img id="projectPokemonUniverse" class="projects__img" src="./assets/img/projects/pokemonUniverse.png" alt="Imagem do projeto Pokémon Universe">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    Pokémon Universe
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" title="HTML">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" title="CSS">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/logo-fancybox.svg" alt="Logo FancyApp" title="FancyApp">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/pokemon_universe" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://pokemonuniverse.netlify.app/" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                        <!-- PORTFOLIO WEBSITE -->
+                        <div class="projects__card my-4 mix personal">
+                            <a data-fancybox href="./assets/img/projects/portfolioPessoal.png">
+                                <img id="projectPortfolioWebsite" class="projects__img" src="./assets/img/projects/portfolioPessoal.png" alt="Imagem do projeto Portfolio Website">
+                            </a>
+                            <div class="projects__main mb-1">
+                                <h3 class="projects__main-title" tabindex="0">
+                                    Portfolio Website
+                                </h3>
+                                <div class="projects__main-tech" tabindex="0">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/html-1.svg" alt="Logo HTML" title="HTML">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/css-3.svg" alt="Logo CSS" title="CSS">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/javascript-1.svg" alt="Logo JavaScript" title="JavaScript">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/git-icon.svg" alt="Logo Git" title="Git">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/github-icon-1.svg" alt="Logo GitHub" title="GitHub">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/logo-fancybox.svg" alt="Logo FancyApp" title="FancyApp">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/Figma-Icon.svg" alt="Logo Figma" title="Figma">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/npm.svg" alt="Logo npm" title="npm">
+                                    <img class="icon-tech" src="./assets/img/logoTechs/scrollReveal.svg" alt="Logo ScrollReveal" title="ScrollReveal">
+                                </div>
+                            </div>
+                            <a href="https://github.com/brunohnsouza/portfolio-website" class="projects__button" target="_blank">
+                                GitHub <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                            <a href="https://brunosouzadev.netlify.app/" class="projects__button" target="_blank">
+                                Demo <i class="uil uil-arrow-right projects__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TALK TO ME ==========  -->
+        <section id="talkToMe"> 
+            <div class="container">
+                <div class="text-center pb-5">
+                    <h2 id="titleTalkToMe" class="myTitleTalkToMe" tabindex="0">Fale Comigo</h2>
+                </div>
+                <div class="contact__content">
+                    <!-- ========== FORM ==========  -->
+                    <form action="https://api.staticforms.xyz/submit" method="post" class="contact__form">
+                        <input type="hidden" name="accessKey" value="02ce18be-8939-4739-8f17-d2f2340c57d8">
+                        <input type="hidden" name="redirectTo" value="javascript:void(window.location.href)">
+                        <input type="text" name="honeypot" style="display: none;">
+                        <div class="contact__form-div">
+                            <label id="labelName" for="name" class="contact__form-tag">Nome</label>
+                            <input id="name" type="text" name="name" placeholder="Digite seu nome" title="Preencha com seu nome" class="contact__form-input" oninput="nameValidate()" tabindex="0">
+                            <small id="infoName" class="contact__form-info">Nome deve ter pelo menos 3 caracteres.</small>
+                        </div>
+                        <div class="contact__form-div">
+                            <label id="labelEmail" for="e-mail" class="contact__form-tag">E-mail</label>
+                            <input id="e-mail" type="email" name="email" placeholder="Digite seu e-mail" title="Preencha com seu e-mail" class="contact__form-input" oninput="emailValidate()" tabindex="0">
+                            <small id="infoEmail" class="contact__form-info">Por favor, forneça um e-mail válido.</small>
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label id="labelMessage" for="message" class="contact__form-tag">Mensagem</label>
+                            <textarea name="message" class="contact__form-input" placeholder="Digite sua mensagem" title="Preencha com sua mensagem" id="message" cols="30" rows="10" oninput="messageValidate()" tabindex="0"></textarea>
+                            <small id="infoMessage" class="contact__form-info textarea">Preencha sua mensagem.</small>
+                        </div>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <button id="btnSend" class="btn btn-lg px-4 btn-with-bg me-sm-3" type="submit" tabindex="0">
+                                <span id="btnSubmit">Enviar mensagem</span> <i class="uil uil-message"></i>
+                            </button>
+                            <button id="btnReset" class="btn btn-without-bg btn-lg px-4" type="reset" tabindex="0">
+                                Apagar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ========== 'THANKS FOR CONTACT ME' ==========  -->
+            <dialog>
+                <div class="container px-4 px-lg-5 my-5">
+                    <h3 id="titleDialog" class="display-6">Agradeço pela sua mensagem!</h3>
+                    <p class="lead mb-4">
+                        <span id="paragraphDialog">Em breve entrarei em contato</span> ;)
+                    </p>
+                    <button id="btnClose" class="btn btn-with-bg btn-lg px-4" tabindex="0">Ok</button>
+                </div>
+            </dialog>
+        </section>
+    </main>
+
+    <footer>
+        <section class="text-center">
+            <!-- ========== SOCIAL ICONS ==========  -->
+            <div class="social-links ">
+                <a href="https://www.linkedin.com/in/brunohnsouza" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+                <a href="https://github.com/brunohnsouza" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+            <!-- ========== COPYRIGHT ==========  -->
+            <div class="copyright p-3">
+                © <span id="yearFooter"></span> Copyright - Bruno Souza
+            </div>
+        </section>
+    </footer>
+
+    <!-- ========== SWITCH COLORS | THEME SWITCHER ==========  -->
+    <aside>
+        <div class="style-switcher">
+            <!-- ========== SWITCH COLORS ==========  -->
+            <div class="style-switcher-toggler s-icon">
+                <i class="uil uil-paint-tool"></i>
+            </div>
+            <h4 id="switchColorTitle" tabindex="0">Escolha sua cor:</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')" tabindex="0"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')" tabindex="0"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')" tabindex="0"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')" tabindex="0"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')" tabindex="0"></span>
+            </div>
+            <!-- ========== THEME SWITCHER ==========  -->
+            <div class="theme-switcher">
+                <input type="checkbox" class="checkbox" id="dark">
+                <label class="label" for="dark" tabindex="0">
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- ========== SCROLL TO TOP ==========  -->
+    <aside>
+        <a class="scroll-to-top scroll-to-top-disable rounded" href="#page-top" tabindex="0">
+            <i class="uil uil-arrow-up"></i>
+        </a>
+    </aside>
+
+    <!-- ========== VLIBRAS ==========  -->
+    <div vw class="enabled" tabindex="0">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </div>
+
+    <!-- ========== JAVASCRIPT ==========  -->
+    <script src="./assets/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/loader.js"></script>
+    <script src="./assets/node_modules/typed.js/lib/typed.min.js"></script>
+    <script src="./assets/node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="./assets/node_modules/mixitup/dist/mixitup.min.js"></script>
+    <script src="./assets/node_modules/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="./assets/js/pageLanguage.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+</body>
+</html>
