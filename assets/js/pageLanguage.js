@@ -39,6 +39,7 @@ let listMyBirthStrong = document.getElementById("listMyBirthStrong")
 let listMyBirth = document.getElementById("listMyBirth")
 let listCountryStrong = document.getElementById("listCountryStrong")
 let listCountry = document.getElementById("listCountry")
+let listNumberStrong = document.getElementById("listNumberStrong")
 let btnDownloadCV = document.getElementById("btnDownloadCV")
 let btnSendMessage = document.getElementById("btnSendMessage")
 
