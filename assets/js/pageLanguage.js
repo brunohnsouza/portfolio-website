@@ -477,6 +477,7 @@ let data = {
         listMyBirth: "13 Outubro, 2003",
         listCountryStrong: "País:",
         listCountry: "Brasil",
+        listNumberStrong: "Número:",
         btnSendMessage: "Envie uma mensagem",
         htmlDescription: "Linguagem de Marcação de Hipertexto utilizada na estruturação de páginas na Web.", // HARDSKILLS
         skillSemantic: "Semântica em",
