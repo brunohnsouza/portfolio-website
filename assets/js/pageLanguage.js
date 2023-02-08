@@ -175,6 +175,7 @@ function languagePortuguese() {
     listMyBirth.textContent = data[attribute].listMyBirth
     listCountryStrong.textContent = data[attribute].listCountryStrong
     listCountry.textContent = data[attribute].listCountry
+    listNumberStrong.textContent = data[attribute].listNumberStrong
     btnDownloadCV.removeAttribute("href", "")
     btnDownloadCV.setAttribute("href", "./assets/download/BrunoSouza_CV_ptBr.pdf")
     btnSendMessage.textContent = data[attribute].btnSendMessage
