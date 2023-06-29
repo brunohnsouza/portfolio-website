@@ -50,7 +50,7 @@ Criar uma solução simples, agradável e acessível, trazendo uma experiência 
 
 <h2 id="projeto">💻 <b>Projeto:</b></h2>
 
-- [Veja o projeto online](https://brunosouzadev.netlify.app/)
+- [Veja o projeto online](https://brunosouzadev.vercel.app/)
 
 <br>
 
